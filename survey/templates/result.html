@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Details</title>
+  {% load static%}
+  <link rel="stylesheet" href="{% static 'style_result.css' %}">
+</head>
+
+<body id="container">
+  <div id="block">
+    <h2>User Details</h2>
+    <p>Name: <span>{{request.session.name}}</span></p>
+    <p>Location: <span>{{request.session.location}}</span></p>
+    <p>Language: <span>{{request.session.language}}</span></p>
+    <p>Comments: <span>{{request.session.comment}}</span></p>
+  </div>
+</body>
+
+</html>
